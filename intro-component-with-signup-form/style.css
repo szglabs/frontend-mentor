@@ -1,1 +1,112 @@
+html {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background: url(images/bg-intro-desktop.png);
+  background-repeat: none;
+  background-color: hsl(0, 100%, 74%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  width: 90vw;
+}
+
+.left {
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.left h1 {
+  font-size: 50px;
+  color: white;
+  line-height: 1.2;
+}
+
+.left p {
+  color: white;
+  font-size: 16px;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+}
+
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(248, 32%, 49%);
+  padding: 10px 25px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 2px rgb(0 0 0 / 20%);
+  margin-bottom: 25px;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 2px rgb(0 0 0 / 20%);
+}
+
+form p {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  font-weight: 500;
+}
+
+form p a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+form input {
+  margin: 10px;
+  padding: 1.1rem;
+  border-radius: 5px;
+  outline: hsl(246, 25%, 77%);
+  border: 2px solid hsl(246, 25%, 77%);
+  font-size: 18px;
+  color: hsl(249, 10%, 26%);
+}
+
+input:focus {
+  border: 2px solid hsl(248, 32%, 49%);
+}
+
+input.error {
+  background: url(images/icon-error.svg) right no-repeat;
+  background-position-x: 95%;
+  border: 3px solid hsl(0, 100%, 74%);
+}
+
+form .btn {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  outline: none;
+  border: none;
+  box-shadow: 0px 4px 2px rgb(0 0 0 / 20%);
+  cursor: pointer;
+}
+
+form .btn:hover {
+  background-color: hsl(154, 66%, 38%);
+}
