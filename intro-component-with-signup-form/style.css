@@ -12,10 +12,11 @@ body {
 
 .main-content {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-  height: 98vh;
-  width: 90vw;
+  height: 95vh;
+  width: 95vw;
 }
 
 .left {
@@ -131,12 +132,21 @@ form .btn:hover {
   background-color: hsl(154, 66%, 38%);
 }
 
+footer {
+  text-align: center;
+}
+
+.attribution {
+  display: inline-block;
+  font-size: 11px;
+}
+
 @media screen and (max-width: 700px) {
   .main-content {
     flex-direction: column;
     justify-content: flex-start;
-    height: 95vh;
-    width: 95vw;
+    height: 100%;
+    width: 100%;
   }
 
   .left {
