@@ -1,6 +1,7 @@
 'use strict'
 
-const formInputs = (()=> {
+const formSubmit = (()=> {
+    // DOM elements
     const firstName = document.querySelector('.first-name');
     const lastName = document.querySelector('.last-name');
     const email = document.querySelector('.email');
@@ -25,31 +26,25 @@ const formInputs = (()=> {
             if (!lastName.value) {
                 lastName.classList.add('error')
                 errorMsg[1].classList.add('error-msg-active')
-
             } else if (lastName.value) {
                 lastName.classList.remove('error')
                 errorMsg[1].classList.remove('error-msg-active')
-
             }
         } else if (input === email) {
             if (!email.value || !emailRegex.test(email.value)) {
                 email.classList.add('error')
                 errorMsg[2].classList.add('error-msg-active')
-
             } else if (email.value || emailRegex.test(email.value)) {
                 email.classList.remove('error')
                 errorMsg[2].classList.remove('error-msg-active')
-
             }
         } else if (input === password) {
             if (!password.value) {
                 password.classList.add('error')
                 errorMsg[3].classList.add('error-msg-active')
-
             } else if (password.value) {
                 password.classList.remove('error')
                 errorMsg[3].classList.remove('error-msg-active')
-
             }
         }
     }

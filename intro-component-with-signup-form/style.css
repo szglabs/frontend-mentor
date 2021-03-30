@@ -47,6 +47,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 600px;
   background-color: hsl(248, 32%, 49%);
   padding: 10px 25px;
   border-radius: 12px;
@@ -60,6 +61,7 @@ form {
   flex-direction: column;
   background-color: white;
   width: 100%;
+  max-width: 600px;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0px 8px 2px rgb(0 0 0 / 20%);
@@ -127,4 +129,53 @@ form .btn {
 
 form .btn:hover {
   background-color: hsl(154, 66%, 38%);
+}
+
+@media screen and (max-width: 700px) {
+  .main-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 95vh;
+    width: 95vw;
+  }
+
+  .left {
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 35px;
+  }
+
+  .left p {
+    margin-bottom: 40px;
+  }
+
+  .right {
+    margin-right: 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  .offer {
+    width: 100%;
+    padding: 5px;
+  }
+
+  form {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 50px;
+  }
+
+  form input {
+    margin: 10px 10px 3px 10px;
+  }
+
+  form p {
+    font-size: 8px;
+  }
 }
