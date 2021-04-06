@@ -136,6 +136,16 @@
   text-decoration: none;
 }
 
+.btn-primary:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: white;
+}
+
+.btn-light:hover {
+  background-color: white;
+  color: hsl(355, 100%, 74%);
+}
+
 /* intro text section / cta */
 
 .intro-title {
@@ -157,4 +167,9 @@
 
 .button-cta {
   margin-top: 40px;
+}
+
+.start-free,
+.learn-more {
+  margin: 0 5px;
 }
