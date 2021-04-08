@@ -447,7 +447,7 @@ ul {
   }
 
   .intro-title h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .navbar.responsive {
@@ -521,6 +521,7 @@ ul {
     position: relative;
     top: -240px;
     left: 5px;
+    width: 450px;
   }
 
   .section-two-text {
@@ -554,5 +555,55 @@ ul {
     text-align: center;
     left: 0;
     top: 0;
+  }
+
+  /* Footer */
+
+  footer {
+    background-color: hsl(240, 10%, 16%);
+    height: 750px;
+    padding-top: 40px;
+    text-align: center;
+    margin-top: -50px;
+  }
+
+  .footer-logo {
+    position: relative;
+    left: 0;
+    top: 10px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    gap: 25px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+  .list-head {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .attribution {
+    position: relative;
+    bottom: -50px;
+    text-align: center;
+    font-size: 10px;
   }
 }
