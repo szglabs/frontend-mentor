@@ -285,6 +285,10 @@ html {
   top: 150px;
 }
 
+.laptop-mobile {
+  display: none;
+}
+
 .section-three-text {
   width: 50%;
   position: relative;
@@ -503,18 +507,11 @@ ul {
   .section-two {
     margin-top: 400px;
     height: 700px;
-    background: url(images/bg-pattern-circles.svg), linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
-    background-repeat: no-repeat;
     background-position-x: 45%;
     background-position-y: 130%;
-    border-bottom-left-radius: 100px;
-    border-top-right-radius: 100px;
-    font-family: Overpass;
-    color: white;
   }
 
   .section-two-content {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -534,14 +531,28 @@ ul {
     bottom: 220px;
   }
 
-  .section-head-light {
-    font-size: 37px;
+  /* Section 3 responsive */
+
+  .laptop {
+    display: none;
   }
 
-  .section-text-light {
-    margin-top: 20px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.75);
+  .laptop-mobile {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .section-three-content {
+    height: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-three-text {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 0;
   }
 }
