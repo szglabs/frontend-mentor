@@ -51,6 +51,14 @@ html {
   align-items: center;
 }
 
+.hamburger {
+  display: none;
+}
+
+.icon-close {
+  display: none;
+}
+
 .nav-left-options {
   display: flex;
   gap: 30px;
@@ -329,4 +337,136 @@ ul {
 
 .attribution a {
   color: white;
+}
+
+@media (max-width: 1040px) {
+  .container {
+    width: 85%;
+  }
+
+  /* Responsive Navbar */
+
+  .navbar a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+
+  .navbar {
+    display: inline-block;
+  }
+
+  .nav-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    margin: 50px 0 0 0;
+    border-radius: 10px;
+  }
+
+  .nav-left-options {
+    display: block;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .nav-right-options {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  .navbar .hamburger {
+    display: block;
+    float: right;
+  }
+
+  .navbar .icon-close {
+    display: none;
+    float: right;
+  }
+
+  .drop-gap {
+    display: none;
+  }
+
+  .drop-arrow {
+    display: none;
+  }
+
+  a.dropbtn {
+    margin-top: 20px;
+  }
+
+  .navbar .nav-left-options .dropdown-content a {
+    float: none;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .navbar .nav-left-options a:hover,
+  .navbar .nav-right-options .login:hover,
+  .dropdown:hover .dropbtn {
+    color: hsl(208, 49%, 24%);
+  }
+
+  .navbar .nav-right-options .login {
+    color: hsl(208, 49%, 24%);
+    margin-top: 30px;
+  }
+
+  .nav-btn-primary {
+    background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    margin-bottom: 30px;
+  }
+
+  .intro-title {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .intro-title h1 {
+    font-size: 40px;
+  }
+
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive a.hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    color: hsl(208, 49%, 24%);
+    font-size: 20px;
+  }
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+  .navbar.responsive .dropdown-content {
+    position: relative;
+    background-color: white;
+  }
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Section 1 */
 }
