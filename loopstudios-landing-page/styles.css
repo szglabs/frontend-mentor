@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.intro-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 650px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-section {
+  font-family: 'Alata';
+  display: flex;
+  padding-top: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  padding: 2px;
+}
+
+nav a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.intro-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Josefin Sans';
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  padding: 40px 40px 30px 40px;
+  font-size: 70px;
+  font-weight: 300;
+  width: 550px;
+  margin-top: 120px;
+}
